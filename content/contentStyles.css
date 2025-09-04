@@ -1,0 +1,29 @@
+/* toast */
+.gaa-toast {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  border-radius: 10px;
+  font: 13px/1.2 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .2s ease, transform .2s ease;
+  z-index: 2147483647;
+}
+.gaa-toast.in { opacity: 1; transform: translateY(0); }
+
+/* buttons */
+.gaa-btn {
+  margin-left: 8px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background: #1a73e8;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+.gaa-btn:hover { background: #1558b0; }

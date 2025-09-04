@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Gmail AI Assist",
+    "version": "1.0.0",
+    "description": "Draft and summarize Gmail emails with AI. Unlimited use.",
+    "permissions": ["storage"],
+    "host_permissions": ["https://openrouter.ai/*"],
+    "background": { "service_worker": "background.js" },
+    "options_page": "ui/options.html",
+    "commands": {
+      "ai_assist": {
+        "suggested_key": { "default": "Ctrl+Shift+A" },
+        "description": "Trigger AI Draft on the current compose window"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://mail.google.com/*"],
+        "js": ["content/contentScript.js"],
+        "css": ["content/contentStyles.css"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  
