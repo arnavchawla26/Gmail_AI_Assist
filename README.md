@@ -5,7 +5,6 @@ A Chrome extension that makes Gmail smarter with **AI-powered drafting and summa
 ✨ Features  
 - **AI Draft** → instantly rewrite or generate professional email drafts.  
 - **AI Summarize** → condense long threads into 3–5 clear bullet points.  
-- **Hotkey Support** → `Ctrl + Shift + A` to draft instantly.  
 - Works in **Compose** and **Reply** windows.  
 - Choose your favorite AI model (Claude, GPT-3.5, Mistral, etc) via [OpenRouter](https://openrouter.ai).  
 - **Unlimited usage** with your own API key (or the built-in fallback key, if configured).  
